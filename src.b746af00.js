@@ -19,4 +19,4 @@ var n=document.getElementById("myModal"),e=document.getElementById("myBtn"),t=do
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./scripts/button-back/btn-back"),require("./scripts/mobile-menu/mobile.js"),require("./scripts/about/modal-about.js"),require("./scripts/product/products-mod"),require("./scripts/product/products-mod2"),require("./scripts/product/products-mod3"),require("./scripts/customer/slider.js"),require("./scripts/contacts/contacts-btn.js");
 },{"./sass/main.scss":"clu1","./scripts/button-back/btn-back":"BmxP","./scripts/mobile-menu/mobile.js":"IS23","./scripts/about/modal-about.js":"SMXd","./scripts/product/products-mod":"j1Ih","./scripts/product/products-mod2":"vZmK","./scripts/product/products-mod3":"JYW6","./scripts/customer/slider.js":"QSCP","./scripts/contacts/contacts-btn.js":"P4mS"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.23b07ca3.js.map
+//# sourceMappingURL=/parcel-project-template/src.b746af00.js.map
