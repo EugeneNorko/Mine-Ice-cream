@@ -1,0 +1,233 @@
+.contacts__title {
+  position: absolute;
+  top: -100px;
+}
+
+.contacts-cards {
+  position: relative;
+  top: -80px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: -15px;
+    font-size: 16px;
+  }
+}
+
+.contacts-cards__item {
+  width: 220px;
+  margin: 10px;
+  background-color: $color-design-white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 20px;
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 20px * 3) / 3);
+    padding: 50px 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 15px 15px;
+    width: calc((100% - 30px * 3) / 3);
+    padding: 51px 44px 62px 43px;
+  }
+}
+
+.contacts-cards__type {
+  padding: 0 15px;
+  display: inline-block;
+  background: $bg-beige-color;
+  border-radius: 4px;
+
+  font-size: 12px;
+  line-height: 1.86;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $color-design-white;
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+  }
+}
+
+.contacts-cards__type--green {
+  background-color: $bg-green-color;
+}
+
+.contacts-cards__city {
+  color: $color-design-black;
+  padding-top: 25px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+  }
+}
+
+.contacts-cards__text {
+  color: $color-description;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  line-height: 1.5;
+  @media screen and (min-width: $tablet) {
+    padding-top: 14px;
+    padding-bottom: 30px;
+  }
+}
+
+.contacts-cards__day {
+  margin-bottom: 10px;
+}
+
+.contacts-timetable {
+  border-bottom: 1px solid $color-line-in-contacts;
+  border-top: 1px solid $color-line-in-contacts;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.contacts-timetable__item:not(:last-of-type) {
+  margin-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 16px;
+  }
+}
+
+.contacts-timetable__time {
+  color: $color-subtitle;
+}
+
+.contacts-cards__tel,
+.contacts-cards__mail {
+  color: $color-description;
+  line-height: 1.5;
+}
+
+.contacts-btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+
+.contacts-btn-list__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.contacts-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $bg-btn-dark;
+  border-radius: 22px;
+  border: transparent;
+  min-width: 162px;
+  height: 44px;
+  color: $bg-btn-light;
+  font-weight: 700;
+  font-size: 16px;
+  transition: background-color $pr-transition;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-btn-dark-hover;
+  }
+
+  &--inverse {
+    background-color: $bg-btn-light;
+    color: $color-design-main;
+    &:hover,
+    &:focus {
+      background-color: $bg-btn-light-hover;
+    }
+  }
+}
+
+.contacts-btn-list__icon {
+  margin-left: 13px;
+  fill: currentColor;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 205; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  position: relative;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(255, 184, 202, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2%;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-body {
+  padding: 2px 16px;
+  width: 100%;
+  height: 85%;
+}
+
+.modal-header {
+  padding: 0 4px;
+  color: white;
+}

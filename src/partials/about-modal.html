@@ -1,0 +1,49 @@
+<!-- modal window section about -->
+
+<div class="backdrop is-hidden" about-modal>
+    <div class="about-modal">
+
+        <button about-modal-close class="about-modal__btn-close" type="button">
+            <svg class="about-modal__btn-close-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <img class="about-modal__pic-cow" src="./images/about/ab-modal-cow.png" alt="cow">
+        <img class="about-modal__pic-moo" src="./images/about/ab-modal-moo.png" alt="cow">
+
+        <picture>
+            <source srcset="
+                        ./images/header/header-milk-desktop.png 1x,
+                        ./images/header/header-milk-desktop@x2.png 2x
+                        " 
+                        media="(min-width:1280px)" />
+
+            <source srcset="
+                        ./images/header/header-milk-tablet.png 1x,
+                        ./images/header/header-milk-tablet@x2.png 2x
+                        " 
+                        media="(min-width:768px)" />
+
+                <!-- <source srcset="
+                                    ./images/header/header-milk-mobile.png 1x,
+                                    ./images/header/header-milk-mobile@x2.png 2x
+                                    " media="(min-width:320px)" /> -->
+            <img class="about-modal__pic-milk" src="./images/header/header-milk-desktop.png" alt="jug of milk">
+        </picture>
+
+        <p class="about-modal__title">how it’s made?</p>
+        <p class="about-modal__text-main">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+            cursus, faucibus lorem eget, egestas eros.
+            Maecenas eleifend erat at justo fringilla.</p>
+        <p class="about-modal__text-secondary">Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat.
+            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+            tincidunt.
+            Aliquam erat volutpat. Aenean accumsan. Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat.
+            Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+            tincidunt.
+            Aliquam erat volutpat. Aenean accumsan.</p>
+    </div>
+</div>

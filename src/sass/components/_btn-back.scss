@@ -1,0 +1,62 @@
+.btn-back {
+  opacity: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 15px;
+  z-index: 5;
+  transition: box-shadow $pr-transition, transform $pr-transition, opacity $pr-transition;
+  position: fixed;
+  border: 0;
+  border-radius: 50%;
+  background-color: #fd88a3;
+  &.show {
+    opacity: 1;
+  }
+  &:hover,
+  &:focus {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px rgba(190, 71, 101, 0.644);
+
+    fill: $color-design-white;
+    @media screen and (min-width: $tablet) {
+      box-shadow: 6px 6px 6px rgba(190, 71, 101, 0.822);
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: 51px;
+    height: 51px;
+    bottom: 20px;
+    right: 18px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 75px;
+    height: 75px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  &:after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    content: '\f077';
+    font-family: FontAwesome;
+    font-size: 2em;
+    font-size: 35px;
+    transition: color 0.3s;
+    color: $color-design-white;
+    &:hover,
+    &:focus {
+      color: $color-design-main;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 35px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 55px;
+    }
+  }
+}

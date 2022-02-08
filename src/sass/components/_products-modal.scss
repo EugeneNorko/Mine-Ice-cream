@@ -1,0 +1,170 @@
+.popup__products--ice-cream {
+  overflow: scroll;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 201;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease 0s;
+}
+.popup__products--ice-cream.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup__products--ice-coffee {
+  overflow: scroll;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 201;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease 0s;
+}
+.popup__products--ice-coffee.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.popup__products--milk-shakes {
+  overflow: scroll;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 201;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease 0s;
+}
+.popup__products--milk-shakes.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.popup-products__body {
+  min-height: 485px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 100px;
+}
+.popup-products__content {
+  background-color: $bg-header-hero;
+  min-height: 485px;
+  border-radius: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-top: 140px;
+
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 4px $bg-mobile-menu-close;
+  transition: margin-right 2s ease-in-out 0.5s;
+
+  &--green {
+    background-color: $bg-green-color;
+    min-height: 485px;
+    border-radius: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 140px;
+
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px $bg-green-color-close;
+    transition: margin-right 2s ease-in-out 0.5s;
+  }
+  &--yellow {
+    background-color: $bg-beige-color;
+    min-height: 485px;
+    border-radius: 24px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 140px;
+
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 4px $bg-beige-color-close;
+    transition: margin-right 2s ease-in-out 0.5s;
+  }
+}
+.popup-products__btn-close {
+  &--pink {
+    background-color: $bg-mobile-menu-close;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    border: 0px;
+    z-index: 50;
+    &:hover,
+    &:focus {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      transition: transform 250ms linear;
+    }
+  }
+  &--yellow {
+    background-color: $bg-beige-color-close;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    border: 0px;
+    z-index: 50;
+    &:hover,
+    &:focus {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      transition: transform 250ms linear;
+    }
+  }
+  &--green {
+    background-color: $bg-green-color-close;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border-radius: 50%;
+    border: 0px;
+    z-index: 50;
+    &:hover,
+    &:focus {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      transition: transform 250ms linear;
+    }
+  }
+}
+.ice-cream__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  top: -22%;
+  left: 50%;
+  transform: translate(-50%);
+  @media screen and (min-width: $desktop) {
+    top: -25%;
+  }
+}
