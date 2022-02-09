@@ -1,0 +1,23 @@
+@import './utils/variables';
+@import './base/common';
+@import './base/reset';
+@import './utils/hidden';
+@import './components/btn-back';
+
+@import './components/container';
+@import './components/section';
+@import './components/products-modal';
+@import './components/about-modal';
+@import './components/contacts-modals';
+
+@import './layout/header';
+@import './layout/mobile-menu';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer-contacts';
+@import './layout/footer';
