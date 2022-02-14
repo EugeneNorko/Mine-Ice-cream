@@ -6,12 +6,12 @@ var o=$("#button-back");$(window).scroll(function(){$(window).scrollTop()>300?o.
 (()=>{const e=document.querySelector(".js-menu"),t=document.querySelector(".js-open-menu"),n=document.querySelector(".js-close-menu"),c=()=>{const n="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!n),e.classList.toggle("is-open")};t.addEventListener("click",c),n.addEventListener("click",c)})();
 },{}],"SMXd":[function(require,module,exports) {
 (()=>{const o={openModalBtn:document.querySelector("[about-modal-open]"),closeModalBtn:document.querySelector("[about-modal-close]"),modal:document.querySelector("[about-modal]")};function e(){o.modal.classList.toggle("is-hidden")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
-},{}],"j1Ih":[function(require,module,exports) {
-(()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
-},{}],"vZmK":[function(require,module,exports) {
-(()=>{const e={openModalBtn:document.querySelector("[data-modal-open2]"),closeModalBtn:document.querySelector("[data-modal-close2]"),modal:document.querySelector("[data-modal2]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
-},{}],"JYW6":[function(require,module,exports) {
-(()=>{const e={openModalBtn:document.querySelector("[data-modal-open3]"),closeModalBtn:document.querySelector("[data-modal-close3]"),modal:document.querySelector("[data-modal3]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+},{}],"SmUp":[function(require,module,exports) {
+(()=>{const e={openModalBtn:document.querySelector("[data-open-card1]"),closeModalBtn:document.querySelector("[data-close-card1]"),modal:document.querySelector("[data-product1]")};e.openModalBtn.addEventListener("click",function(){e.modal.classList.toggle("is-open")})})();
+},{}],"gtv9":[function(require,module,exports) {
+(()=>{const e={openModalBtn:document.querySelector("[data-open-card2]"),closeModalBtn:document.querySelector("[data-close-card2]"),modal:document.querySelector("[data-product2]")};e.openModalBtn.addEventListener("click",function(){e.modal.classList.toggle("is-open")})})();
+},{}],"njXl":[function(require,module,exports) {
+(()=>{const e={openModalBtn:document.querySelector("[data-open-card3]"),closeModalBtn:document.querySelector("[data-close-card3]"),modal:document.querySelector("[data-product3]")};e.openModalBtn.addEventListener("click",function(){e.modal.classList.toggle("is-open")})})();
 },{}],"QSCP":[function(require,module,exports) {
 $(".reviews__set").slick({dots:!0});
 },{}],"NVEA":[function(require,module,exports) {
@@ -19,6 +19,6 @@ $(".reviews__set").slick({dots:!0});
 },{}],"Wr6W":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-franchise-open]"),closeModalBtn:document.querySelector("[data-modal-franchise-close]"),modal:document.querySelector("[data-modal-franchise]")};function o(){e.modal.classList.toggle("is-open")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./scripts/button-back/btn-back"),require("./scripts/mobile-menu/mobile.js"),require("./scripts/about/modal-about.js"),require("./scripts/product/products-mod"),require("./scripts/product/products-mod2"),require("./scripts/product/products-mod3"),require("./scripts/customer/slider.js"),require("./scripts/contacts/contacts-our-location.js"),require("./scripts/contacts/contacts-franchise.js");
-},{"./sass/main.scss":"clu1","./scripts/button-back/btn-back":"BmxP","./scripts/mobile-menu/mobile.js":"IS23","./scripts/about/modal-about.js":"SMXd","./scripts/product/products-mod":"j1Ih","./scripts/product/products-mod2":"vZmK","./scripts/product/products-mod3":"JYW6","./scripts/customer/slider.js":"QSCP","./scripts/contacts/contacts-our-location.js":"NVEA","./scripts/contacts/contacts-franchise.js":"Wr6W"}]},{},["Focm"], null)
-//# sourceMappingURL=/Mine-Ice-cream/src.8bd72271.js.map
+"use strict";require("./sass/main.scss"),require("./scripts/button-back/btn-back"),require("./scripts/mobile-menu/mobile.js"),require("./scripts/about/modal-about.js"),require("./scripts/product/products-card1"),require("./scripts/product/products-card2"),require("./scripts/product/products-card3"),require("./scripts/customer/slider.js"),require("./scripts/contacts/contacts-our-location.js"),require("./scripts/contacts/contacts-franchise.js");
+},{"./sass/main.scss":"clu1","./scripts/button-back/btn-back":"BmxP","./scripts/mobile-menu/mobile.js":"IS23","./scripts/about/modal-about.js":"SMXd","./scripts/product/products-card1":"SmUp","./scripts/product/products-card2":"gtv9","./scripts/product/products-card3":"njXl","./scripts/customer/slider.js":"QSCP","./scripts/contacts/contacts-our-location.js":"NVEA","./scripts/contacts/contacts-franchise.js":"Wr6W"}]},{},["Focm"], null)
+//# sourceMappingURL=/Mine-Ice-cream/src.b89e0974.js.map
