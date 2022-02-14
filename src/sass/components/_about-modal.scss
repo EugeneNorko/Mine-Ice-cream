@@ -8,6 +8,8 @@
 
   z-index: 5;
 
+  padding: 40px 0;
+
   background-color: rgba(0, 0, 0, 0.5);
 
   transition: visibility $pr-transition, opacity $pr-transition;
@@ -17,23 +19,27 @@
     pointer-events: none;
     visibility: hidden;
   }
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 
 .about-modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-
   padding: 40px 15px 150px 15px;
 
   width: 90%;
-  height: auto;
+  height: 90%;
+  min-height: 690px;
   overflow: hidden;
+  overflow-y: auto;
 
   border-radius: 24px;
   background-color: $bg-modal-about;
 
-  transform: translate(-50%, -50%) scale(1);
   transition: transform $pr-transition, background-color $pr-transition;
 
   @media screen and (min-width: $mobile) and (max-width: 767px) {
@@ -41,12 +47,20 @@
     height: 500px;
   }
   @media screen and (min-width: $tablet) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    // top: 50%;
+    // left: 50%;
+    transform: translateX(-50%) scale(1);
     padding: 40px 30px 240px 30px;
     width: 630px;
     height: 620px;
   }
 
   @media screen and (min-width: $desktop) {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
     padding-bottom: 235px;
     width: 650px;
     height: 710px;

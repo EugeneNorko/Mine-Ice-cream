@@ -66,49 +66,6 @@
 .mob-menu__buy-btn {
   margin-bottom: 19px;
 }
-// .btn__buy {
-//   display: flex;
-//   justify-content: center;
-//   border-radius: 25px;
-//   align-items: center;
-//   width: 100%;
-
-//   font-family: $text-main;
-//   font-style: normal;
-//   font-weight: bold;
-//   font-size: 16px;
-//   line-height: 1.4;
-
-//   color: $bg-btn-dark;
-//   background-color: $bg-btn-light;
-//   border: transparent;
-
-//   transition: background-color $pr-transition;
-
-//   &--size {
-//     // margin-top: 50px;
-//     margin-bottom: 20px;
-//     padding: 15px 0;
-//   }
-//   &:hover,
-//   &:focus {
-//     background-color: $bg-btn-light-hover;
-//     color: $bg-btn-dark-hover;
-//   }
-
-//   &--arrow {
-//     fill: currentColor;
-//     margin-left: 15px;
-//     .btn__buy:hover &,
-//     .btn__buy:focus & {
-//       fill: $bg-btn-dark-hover;
-//     }
-//   }
-// }
-
-// mob-nav
-.mob-nav {
-}
 
 .mob-nav__item {
   border-bottom: 1px solid $br-mobile-color;
