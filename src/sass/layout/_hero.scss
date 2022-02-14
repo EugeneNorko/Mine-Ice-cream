@@ -218,14 +218,18 @@
 }
 
 .arrow-right {
-  z-index: 3;
   fill: $color-design-main;
-}
+  width: 6px;
+  height: 6px;
 
-.milk-description__btn:hover,
-.milk-description__btn:focus {
-  .arrow-right {
-    fill: $color-design-white;
+  @media screen and (min-width: $desktop) {
+    width: 8px;
+    height: 8px;
+  }
+
+  .milk-description__btn:hover &,
+  .milk-description__btn:focus & {
+    fill: $color-design-main;
   }
 }
 

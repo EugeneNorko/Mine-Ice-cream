@@ -105,7 +105,6 @@ header {
   align-items: center;
   justify-content: center;
   margin-left: auto;
-  margin-right: 20px;
 
   width: 40px;
   height: 40px;
@@ -122,6 +121,7 @@ header {
   }
 
   @media screen and (min-width: $tablet) {
+    margin-right: 20px;
   }
   @media screen and (min-width: $desktop) {
     display: none;

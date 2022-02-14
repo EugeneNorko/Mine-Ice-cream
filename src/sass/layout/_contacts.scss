@@ -156,12 +156,25 @@
     background-color: $bg-btn-dark-hover;
   }
 
+  @media screen and (min-width: $tablet) {
+    min-width: 191px;
+  }
+  @media screen and (min-width: $tablet) {
+    min-width: 198px;
+  }
+
   &--inverse {
     background-color: $bg-btn-light;
     color: $color-design-main;
     &:hover,
     &:focus {
       background-color: $bg-btn-light-hover;
+    }
+    @media screen and (min-width: $tablet) {
+      min-width: 174px;
+    }
+    @media screen and (min-width: $tablet) {
+      min-width: 180px;
     }
   }
 }

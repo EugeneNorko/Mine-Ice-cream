@@ -48,7 +48,7 @@
   }
 }
 .products-set__item {
-  min-height: 485px;
+  height: 485px;
   border-radius: 24px;
   padding-left: 40px;
   padding-right: 40px;
@@ -58,6 +58,15 @@
   text-align: center;
   position: relative;
 
+  transition: height $pr-transition;
+
+  @media screen and (max-width: 767px) {
+    width: 280px;
+    &:not(:last-child) {
+      margin-bottom: 130px;
+    }
+  }
+
   @media screen and (min-width: $tablet) {
     margin: 10px;
     flex-basis: calc((100% - 20px * 3) / 3);
@@ -65,6 +74,7 @@
     padding-right: 25px;
   }
   @media screen and (min-width: $desktop) {
+    height: 525px;
     margin: 13px;
     flex-basis: calc((100% - 26px * 3) / 3);
     padding-left: 49px;
@@ -73,50 +83,52 @@
 
   &::before {
     position: absolute;
-    top: -23%;
+    top: -113px;
     left: 50%;
     transform: translate(-50%);
+    width: 249px;
+    height: 252px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     @media screen and (min-width: $tablet) {
-      top: -20%;
+      top: -105px;
+      width: 220px;
+      height: 226px;
     }
     @media screen and (min-width: $desktop) {
-      top: -42%;
+      top: -212px;
+      width: 335px;
+      height: 335px;
     }
   }
-
+  &.is-open {
+    height: 600px;
+  }
+}
+////////////////Pictures of Products///////////////////////////////
+.products-set__item {
   &--pink {
     background: $bg-header-hero;
     &::before {
       content: '';
-      width: 249px;
-      height: 252px;
-      background-size: contain;
-      background: url('../images/products/pr-ice-cream-mobile.png') no-repeat center;
+      background: url('../images/products/pr-ice-cream-mobile.png');
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background: url('../images/products/pr-ice-cream-mobile@x2.png') no-repeat center;
-        background-size: contain;
+        background: url('../images/products/pr-ice-cream-mobile@x2.png');
       }
       @media screen and (min-width: $tablet) {
         content: '';
-        width: 220px;
-        height: 226px;
-        background-size: contain;
-        background: url('../images/products/pr-ice-cream-tablet.png') no-repeat center;
+        background: url('../images/products/pr-ice-cream-tablet.png');
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background: url('../images/products/pr-ice-cream-tablet@x2.png') no-repeat center;
-          background-size: contain;
+          background: url('../images/products/pr-ice-cream-tablet@x2.png');
         }
       }
 
       @media screen and (min-width: $desktop) {
         content: '';
-        width: 335px;
-        height: 335px;
-        background-size: contain;
-        background: url('../images/products/pr-ice-cream-desktop.png') no-repeat center;
+        background: url('../images/products/pr-ice-cream-desktop.png');
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background: url('../images/products/pr-ice-cream-desktop@x2.png') no-repeat center;
-          background-size: contain;
+          background: url('../images/products/pr-ice-cream-desktop@x2.png');
         }
       }
     }
@@ -126,83 +138,55 @@
     background-color: $bg-green-color;
     &::before {
       content: '';
-      width: 249px;
-      height: 252px;
-      background-size: contain;
-      background: url('../images/products/pr-milk-shakes-mobile.png') no-repeat center;
+      background: url('../images/products/pr-milk-shakes-mobile.png');
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background: url('../images/products/pr-milk-shakes-mobile@x2.png') no-repeat center;
-        background-size: contain;
+        background: url('../images/products/pr-milk-shakes-mobile@x2.png');
       }
       @media screen and (min-width: $tablet) {
         content: '';
-        width: 220px;
-        height: 224px;
-        background-size: contain;
-        background: url('../images/products/pr-milk-shakes-tablet.png') no-repeat center;
+        background: url('../images/products/pr-milk-shakes-tablet.png');
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background: url('../images/products/pr-milk-shakes-tablet@x2.png') no-repeat center;
-          background-size: contain;
+          background: url('../images/products/pr-milk-shakes-tablet@x2.png');
         }
       }
 
       @media screen and (min-width: $desktop) {
         content: '';
-        width: 335px;
-        height: 335px;
-        background-size: contain;
-        background: url('../images/products/pr-milk-shakes-desktop.png') no-repeat center;
+        background: url('../images/products/pr-milk-shakes-desktop.png');
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background: url('../images/products/pr-milk-shakes-desktop@x2.png') no-repeat center;
-          background-size: contain;
+          background: url('../images/products/pr-milk-shakes-desktop@x2.png');
         }
       }
     }
   }
+
   &--yellow {
     background-color: $bg-beige-color;
     &::before {
       content: '';
-      width: 249px;
-      height: 252px;
-      background-size: contain;
-      background: url('../images/products/pr-ice-coffee-mobile.png') no-repeat center;
+      background: url('../images/products/pr-ice-coffee-mobile.png');
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background: url('../images/products/pr-ice-coffee-mobile@x2.png') no-repeat center;
-        background-size: contain;
+        background: url('../images/products/pr-ice-coffee-mobile@x2.png');
       }
       @media screen and (min-width: $tablet) {
         content: '';
-        width: 220px;
-        height: 224px;
-        background-size: contain;
-        background: url('../images/products/pr-ice-coffee-tablet.png') no-repeat center;
+        background: url('../images/products/pr-ice-coffee-tablet.png');
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background: url('../images/products/pr-ice-coffee-tablet@x2.png') no-repeat center;
-          background-size: contain;
+          background: url('../images/products/pr-ice-coffee-tablet@x2.png');
         }
       }
 
       @media screen and (min-width: $desktop) {
         content: '';
-        width: 335px;
-        height: 335px;
-        background-size: contain;
         background: url('../images/products/pr-ice-coffee-desktop.png') no-repeat center;
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background: url('../images/products/pr-ice-coffee-desktop@x2.png') no-repeat center;
-          background-size: contain;
         }
       }
     }
   }
-  @media screen and (max-width: 767px) {
-    width: 280px;
-    &:not(:last-child) {
-      margin-bottom: 130px;
-    }
-  }
 }
+///////////////////////////////////////////////////////////////
 
 .products-set__title {
   font-family: Titan One;
@@ -228,6 +212,9 @@
   fill: $bg-btn-light;
 }
 .products-set__text {
+  max-height: 124px;
+  overflow: hidden;
+  overflow-y: hidden;
   margin-top: 30px;
   font-weight: 700;
   font-size: 14px;
@@ -243,17 +230,47 @@
     font-size: 14px;
     margin-top: 32px;
   }
+
+  .products-set__item.is-open & {
+    max-height: 230px;
+    overflow-y: scroll;
+
+    @media screen and (min-width: $desktop) {
+      max-height: 210px;
+    }
+  }
 }
+
+.product-set__text--unvisible {
+  display: block;
+  opacity: 0;
+
+  position: absolute;
+
+  .products-set__item.is-open & {
+    opacity: 1;
+    position: static;
+    transition: opacity $pr-transition;
+  }
+}
+
 .products-set__btn {
+  position: absolute;
+  display: flex;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   border: transparent;
   border-radius: 50%;
-  margin-top: 30px;
   background-color: $bg-btn-light;
   transition: background-color $pr-transition, fill $pr-transition;
-  @media screen and (min-width: $tablet) {
-    margin-top: 40px;
+
+  @media screen and (min-width: $desktop) {
+    bottom: 50px;
   }
   &:hover,
   &:focus {
