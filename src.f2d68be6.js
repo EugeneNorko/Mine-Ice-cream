@@ -21,4 +21,4 @@ $(".reviews__set").slick({dots:!0});
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./scripts/button-back/btn-back"),require("./scripts/mobile-menu/mobile.js"),require("./scripts/about/modal-about.js"),require("./scripts/product/products-card1"),require("./scripts/product/products-card2"),require("./scripts/product/products-card3"),require("./scripts/customer/slider.js"),require("./scripts/contacts/contacts-our-location.js"),require("./scripts/contacts/contacts-franchise.js");
 },{"./sass/main.scss":"clu1","./scripts/button-back/btn-back":"BmxP","./scripts/mobile-menu/mobile.js":"IS23","./scripts/about/modal-about.js":"SMXd","./scripts/product/products-card1":"SmUp","./scripts/product/products-card2":"gtv9","./scripts/product/products-card3":"njXl","./scripts/customer/slider.js":"QSCP","./scripts/contacts/contacts-our-location.js":"NVEA","./scripts/contacts/contacts-franchise.js":"Wr6W"}]},{},["Focm"], null)
-//# sourceMappingURL=/Mine-Ice-cream/src.b89e0974.js.map
+//# sourceMappingURL=/Mine-Ice-cream/src.f2d68be6.js.map
