@@ -29,13 +29,14 @@
 
 .about-modal {
   position: absolute;
-  padding: 40px 15px 150px 15px;
+  top: 0;
+  // padding: 40px 15px;
 
   width: 90%;
-  height: 90%;
-  min-height: 690px;
+  // height: 90%;
+  // min-height: 690px;
   overflow: hidden;
-  overflow-y: auto;
+  // overflow-y: auto;
 
   border-radius: 24px;
   background-color: $bg-modal-about;
@@ -44,26 +45,22 @@
 
   @media screen and (min-width: $mobile) and (max-width: 767px) {
     width: 430px;
-    height: 500px;
+    // height: 500px;
   }
   @media screen and (min-width: $tablet) {
     position: absolute;
-    top: 0;
     left: 50%;
-    // top: 50%;
-    // left: 50%;
     transform: translateX(-50%) scale(1);
-    padding: 40px 30px 240px 30px;
+    // padding: 40px 30px;
     width: 630px;
-    height: 620px;
+    // height: 620px;
   }
 
   @media screen and (min-width: $desktop) {
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
-    padding-bottom: 235px;
     width: 650px;
-    height: 710px;
+    // height: 710px;
   }
 
   .backdrop.is-hidden & {
@@ -119,6 +116,13 @@
   }
 }
 
+.about-modal__pic-wrapp {
+  position: relative;
+  min-height: 150px;
+  @media screen and (min-width: $tablet) {
+    min-height: 240px;
+  }
+}
 .about-modal__pic-moo {
   position: absolute;
 
@@ -170,6 +174,14 @@
 
   @media screen and (min-width: $desktop) {
     width: 215px;
+  }
+}
+
+.about-modal__text-wrapp {
+  padding: 40px 15px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 40px 30px;
   }
 }
 
