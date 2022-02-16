@@ -235,7 +235,7 @@
   }
 
   .products-set__item.is-open & {
-    max-height: 245px;
+    max-height: 255px;
     overflow-y: auto;
 
     @media screen and (min-width: $desktop) {

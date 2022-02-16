@@ -1,4 +1,8 @@
 .btn-back {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   cursor: pointer;
   width: 50px;
@@ -7,13 +11,26 @@
   right: 15px;
   z-index: 5;
   transition: box-shadow $pr-transition, transform $pr-transition, opacity $pr-transition;
-  position: fixed;
   border: 0;
   border-radius: 50%;
   background-color: #fd88a3;
   &.show {
     opacity: 1;
   }
+
+  @media screen and (min-width: $tablet) {
+    // width: 51px;
+    // height: 51px;
+    // bottom: 20px;
+    right: 20px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 75px;
+    height: 75px;
+    // bottom: 20px;
+    // right: 20px;
+  }
+
   &:hover,
   &:focus {
     transform: translateY(-10px);
@@ -24,39 +41,47 @@
       box-shadow: 6px 6px 6px rgba(190, 71, 101, 0.822);
     }
   }
+}
+
+.btn-back__icon {
+  fill: $color-design-white;
+  width: 20px;
+  height: 20px;
+  transform: rotate(270deg);
+  transition: fill $pr-transition;
+
   @media screen and (min-width: $tablet) {
-    width: 51px;
-    height: 51px;
-    bottom: 20px;
-    right: 18px;
+    width: 25px;
+    height: 25px;
   }
   @media screen and (min-width: $desktop) {
-    width: 75px;
-    height: 75px;
-    bottom: 20px;
-    right: 20px;
+    width: 30px;
+    height: 30px;
   }
-
-  &:after {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    content: '\f077';
-    font-family: FontAwesome;
-    font-size: 2em;
-    font-size: 35px;
-    transition: color 0.3s;
-    color: $color-design-white;
-    &:hover,
-    &:focus {
-      color: $color-design-main;
-    }
-    @media screen and (min-width: $tablet) {
-      font-size: 35px;
-    }
-    @media screen and (min-width: $desktop) {
-      font-size: 55px;
-    }
+  .btn-back:hover &,
+  .btn-back:focus & {
+    fill: $color-design-main;
   }
 }
+// &:after {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   content: '\f077';
+//   font-family: FontAwesome;
+//   font-size: 2em;
+//   font-size: 35px;
+//   transition: color 0.3s;
+//   color: $color-design-white;
+//   &:hover,
+//   &:focus {
+//     color: $color-design-main;
+//   }
+//   @media screen and (min-width: $tablet) {
+//     font-size: 35px;
+//   }
+//   @media screen and (min-width: $desktop) {
+//     font-size: 55px;
+//   }
+// }
