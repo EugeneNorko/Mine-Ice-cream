@@ -50,8 +50,8 @@
 .products-set__item {
   height: 485px;
   border-radius: 24px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 20px;
   padding-top: 160px;
 
@@ -247,13 +247,15 @@
 }
 
 .product-set__text--unvisible {
+  opacity: 0;
   visibility: hidden;
   position: absolute;
 
   .products-set__item.is-open & {
+    opacity: 1;
     visibility: initial;
     position: static;
-    transition: visibility $pr-transition;
+    transition: opacity $pr-transition, visibility $pr-transition;
   }
 }
 

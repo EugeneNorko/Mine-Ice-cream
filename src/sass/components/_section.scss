@@ -8,10 +8,28 @@
     }
   }
 
-  &--products,
+  &--products {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    @media screen and (min-width: $tablet) {
+      padding-top: 125px;
+      padding-bottom: 110px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 120px;
+    }
+  }
+
   &--about {
     padding-top: 120px;
     padding-bottom: 100px;
+    @media screen and (min-width: $tablet) {
+      padding-top: 130px;
+      padding-bottom: 150px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 130px;
+    }
   }
 
   &--about {
@@ -19,8 +37,12 @@
   }
 
   &--advantages {
+    // padding-top: 130px;
     padding-bottom: 100px;
     background-color: $bg-section;
+    @media screen and (min-width: $tablet) {
+      // padding-top: 150px;
+    }
   }
 
   &--gallery {
