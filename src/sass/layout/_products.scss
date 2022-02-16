@@ -217,13 +217,15 @@
   overflow: hidden;
   margin-top: 30px;
   font-weight: 700;
-  font-size: 14px;
+  // font-size: 14px;
+  font-size: 10pt;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.04em;
 
   color: $color-design-white;
   @media screen and (min-width: $tablet) {
+    font-size: 14px;
     max-height: 130px;
     line-height: 1.7;
   }
