@@ -213,6 +213,7 @@
 }
 
 .products-set__text {
+  -webkit-text-size-adjust: none;
   max-height: 125px;
   overflow: hidden;
 
@@ -224,6 +225,10 @@
   letter-spacing: 0.04em;
 
   color: $color-design-white;
+
+  scrollbar-width: thin;
+  scrollbar-color: $bg-btn-dark $color-design-white;
+
   @media screen and (min-width: $tablet) {
     max-height: 130px;
     line-height: 1.7;
