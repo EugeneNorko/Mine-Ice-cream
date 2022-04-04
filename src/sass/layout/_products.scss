@@ -48,7 +48,7 @@
   }
 }
 .products-set__item {
-  height: 505px;
+  height: 485px;
   border-radius: 24px;
   padding-left: 30px;
   padding-right: 30px;
@@ -103,7 +103,7 @@
     }
   }
   &.is-open {
-    height: 600px;
+    height: 575px;
   }
 }
 ////////////////Pictures of Products///////////////////////////////
@@ -214,6 +214,8 @@
 
 .products-set__text {
   -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
   max-height: 125px;
   overflow: hidden;
 
