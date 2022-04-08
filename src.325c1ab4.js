@@ -7,7 +7,7 @@ var o=$("#button-back");$(window).scroll(function(){$(window).scrollTop()>300?o.
 },{}],"SMXd":[function(require,module,exports) {
 (()=>{const o={openModalBtn:document.querySelector("[about-modal-open]"),closeModalBtn:document.querySelector("[about-modal-close]"),modal:document.querySelector("[about-modal]")};function e(){o.modal.classList.toggle("is-hidden")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
 },{}],"SmUp":[function(require,module,exports) {
-(()=>{const e={openModalBtn:document.querySelector("[data-open-card1]"),closeModalBtn:document.querySelector("[data-close-card1]"),modal:document.querySelector("[data-product1]")};e.openModalBtn.addEventListener("click",function(){e.modal.classList.toggle("is-open")})})();
+(()=>{const e={openModalBtn:document.querySelector("[data-open-card1]"),closeModalBtn:document.querySelector("[data-close-card1]"),modal:document.querySelector("[data-product1]")};function o(){e.modal.classList.toggle("is-open")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"gtv9":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-open-card2]"),closeModalBtn:document.querySelector("[data-close-card2]"),modal:document.querySelector("[data-product2]")};e.openModalBtn.addEventListener("click",function(){e.modal.classList.toggle("is-open")})})();
 },{}],"njXl":[function(require,module,exports) {
@@ -21,4 +21,4 @@ $(".reviews__set").slick({dots:!0});
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./scripts/button-back/btn-back"),require("./scripts/mobile-menu/mobile.js"),require("./scripts/about/modal-about.js"),require("./scripts/product/products-card1"),require("./scripts/product/products-card2"),require("./scripts/product/products-card3"),require("./scripts/customer/slider.js"),require("./scripts/contacts/contacts-our-location.js"),require("./scripts/contacts/contacts-franchise.js");
 },{"./sass/main.scss":"clu1","./scripts/button-back/btn-back":"BmxP","./scripts/mobile-menu/mobile.js":"IS23","./scripts/about/modal-about.js":"SMXd","./scripts/product/products-card1":"SmUp","./scripts/product/products-card2":"gtv9","./scripts/product/products-card3":"njXl","./scripts/customer/slider.js":"QSCP","./scripts/contacts/contacts-our-location.js":"NVEA","./scripts/contacts/contacts-franchise.js":"Wr6W"}]},{},["Focm"], null)
-//# sourceMappingURL=/Mine-Ice-cream/src.01bd4e29.js.map
+//# sourceMappingURL=/Mine-Ice-cream/src.325c1ab4.js.map
