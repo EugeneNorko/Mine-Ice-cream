@@ -15,4 +15,4 @@ $(".reviews__set").slick({dots:!0});
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./scripts/button-back/btn-back"),require("./scripts/mobile-menu/mobile.js"),require("./scripts/about/modal-about.js"),require("./scripts/customer/slider.js"),require("./scripts/contacts/contacts-our-location.js"),require("./scripts/contacts/contacts-franchise.js");
 },{"./sass/main.scss":"clu1","./scripts/button-back/btn-back":"BmxP","./scripts/mobile-menu/mobile.js":"IS23","./scripts/about/modal-about.js":"SMXd","./scripts/customer/slider.js":"QSCP","./scripts/contacts/contacts-our-location.js":"NVEA","./scripts/contacts/contacts-franchise.js":"Wr6W"}]},{},["Focm"], null)
-//# sourceMappingURL=/Mine-Ice-cream/src.002e7497.js.map
+//# sourceMappingURL=/Mine-Ice-cream/src.8287325f.js.map
